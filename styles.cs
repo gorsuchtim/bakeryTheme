@@ -193,13 +193,9 @@ Home Page Styles
 	width: inherit;
 	z-index: 2;
 }
-#logo {	
-	position: absolute;
-	top: 20%;		
-	left: 41.8%;		
-	z-index: 1;		
-}
 #logo h1 {	
+	margin-top: 150px;				
+	z-index: 1;	
 	font-family: 'Clicker Script', cursive;		
 	color: rgba(153,204,255,1);
 	text-shadow: 2px 1px 1px black;
@@ -709,10 +705,7 @@ Small Handheld Styles
 @media screen and (max-width: 519px) {
 	#navigationMenu {
 		display: none;
-	}
-	#logo {
-		left: 30%;
-	}
+	}	
 	#mobileMenu, #mobileMenuButton {
 		display: block;
 	}
@@ -721,6 +714,10 @@ Small Handheld Styles
 	}
 	#galleryCarousel {
 		height: 515px;
+	}
+	#myStoryContainer h4 {
+		font-size: 20px;
+		padding: 0;
 	}
 	.item {
 		height: 515px;	
@@ -733,8 +730,13 @@ Small Handheld Styles
 		background-size: 200px 200px;
 		background-position: center;	
 	}
-	.galleryTeaseShade {
-		display: none;
+	.galleryTeaseShade {		
+		border: 1px solid white;
+		border-radius: 16px;
+	}
+	.galleryTeaseShade h5 {
+		color: rgba(153,204,255,1);
+		text-shadow: 2px 2px 2px black;
 	}
 	.templateHeader h3 {
 		margin-top: 40px;
@@ -798,9 +800,22 @@ Large Handheld Styles and tablet styles
 	#navigationMenu {
 		display: none;
 	}
-	#logo {
-		left: 35%;
+	.galleryTease {
+		position: relative;	
+		height: 200px;			
+		color: transparent;
+		background-repeat: no-repeat;
+		background-size: 200px 200px;
+		background-position: center;	
 	}
+	.galleryTeaseShade {		
+		border: 1px solid white;
+		border-radius: 16px;
+	}
+	.galleryTeaseShade h5 {
+		color: rgba(153,204,255,1);
+		text-shadow: 2px 2px 2px black;
+	}	
 	#mobileMenu, #mobileMenuButton {
 		display: block;
 	}
@@ -819,7 +834,10 @@ Large Handheld Styles and tablet styles
 	.homeContainer h3 {
 		font-size: 35px;
 	}
-	
+	#myStoryContainer h4 {
+		padding: 0;
+		font-size: 20px;
+	}	
 	#contactForm fieldset {
 		margin-top: 20px;
 	}
@@ -852,12 +870,6 @@ Large Handheld Styles and tablet styles
 	#menuTease button {
 		margin-bottom: 30px;
 	}	
-}
-
-@media screen and (min-width: 691px) and (max-width: 1024px) {
-	#logo {
-		left: 40%;
-	}
 }
 
 @media screen and (max-width: 991px) {
