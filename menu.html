@@ -1,0 +1,72 @@
+<!-- Menu navigation index/landing page -->
+
+<div class="container-fluid" id="menu" ng-controller="MenuNavigation as menu">
+	
+	<div class="row templateHeader" style="background-image: url('images/slider5.jpg');">
+		<div class="overlay">
+			<div class="col-xs-12 templateHeader">
+				<h3 class="text-center">Menu</h3>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row" id="menuNavigation" >
+	
+		<div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
+			<ul>
+				<li><a href="JavaScript:void(0)" ng-click="menu.setMenu(1)">Cakes</a></li>
+				<li><a href="JavaScript:void(0)" ng-click="menu.setMenu(2)">Breads</a></li>
+				<li><a href="JavaScript:void(0)" ng-click="menu.setMenu(3)">Cookies</a></li>
+				<li><a href="JavaScript:void(0)" ng-click="menu.setMenu(4)">Pies</a></li>
+			</ul>
+		</div>
+
+	</div>
+	
+	<!-- Cake Menu -->	
+	<cake-menu></cake-menu>
+
+	<!-- Cupcake Menu -->
+	<bread-menu></bread-menu>
+
+	<!-- Cookie Menu -->
+	<cookie-menu></cookie-menu>
+
+	<!-- Dessert Menu -->
+	<pies-menu></pies-menu>
+
+ <div class="row" id="menuTease">
+		
+		<div class="col-xs-12 col-md-6" id="textTease">
+			<h4>This is about my approach to baking and why I do it.  I'll talk about the types of ingredients I use and how I buy them from local grocers and farmers markets.  Additionally I talk about how you can feel free to ask me about food substitutes to accomodate diet and allergies</h4>
+			
+			<h5>This is where I'll mention the seasonal items pictured to the right and direct you to check them out inside the menu.  And to be sure to follow me on Facebook and Twitter to stay up to date with whatever I'm up to.</h5>
+
+			<button class="btn btn-lg center-block" ng-click="toContact()"><a href="JavaScript:void(0)">Contact me today</a></button>
+		</div>
+
+		<div class="col-xs-6" id="seasonalMenuTease">
+			
+			<div class="row" id="menuTeaseImageTitle">
+				<div class="col-xs-12">
+					<h3 class="text-center">Seasonal top sellers</h3>
+				</div>
+			</div>
+
+			<div class="row" id="menuTeaseImages">
+				<div class="col-sm-12">
+					<a href="JavaScript:void(0)" ng-click="menu.setMenu(3)"><img src="images/slider2.jpg" class="img-responsive center-block" alt="" ></a>
+					
+					<a href="#" ng-click="menu.setMenu(1)"><img src="images/cake.jpg" class="img-responsive center-block" alt=""></a>
+				
+					<a href="#" ng-click="menu.setMenu(4)"><img src="images/pie.jpg" class="img-responsive center-block" alt=""></a>
+				
+					<a href="#" ng-click="menu.setMenu(2)"><img src="images/pumpkinBread.jpg" class="img-responsive center-block" alt=""></a>
+				</div>
+			</div>
+			
+		</div>
+
+	</div> 
+
+</div>
