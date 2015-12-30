@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BakeryThemeApp">
+	<head>
+		<title>BakeryTheme</title>
+		
+		<meta charset="UTF-8">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">		
+		
+		<meta name="description" content="A bakery theme built on AngularJS and using Bootstrap 3">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+		<meta name="author" content="Tim Gorsuch">
+
+		<!-- favicon icon -->
+		<link rel="shortcut icon" href="http://www.picgifs.com/mini-graphics/mini-graphics/cake/mini-graphics-cake-076872.gif" type="image/x-icon">
+		<link rel="icon" href="http://www.picgifs.com/mini-graphics/mini-graphics/cake/mini-graphics-cake-076872.gif" type="image/x-icon">
+
+		<!-- fonts! -->
+		<link href='http://fonts.googleapis.com/css?family=Clicker+Script' rel='stylesheet' type='text/css'>		
+		<link href='http://fonts.googleapis.com/css?family=Alice' rel='stylesheet' type='text/css'>
+
+		<!-- css -->
+		<!-- Load online bootstrap css -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/animate.css">				
+		
+	</head>
+
+	<body ng-controller="SiteNav as nav">
+		<div class="container-fluid" id="mainContainer">
+		
+			<div class="container-fluid" id="navigationMenu">			
+				<div class="row">			
+		   
+					<nav class="col-sm-12 navMenu" id="mainNavigation">
+						<ul>
+							<li class="pull-left" id="navLogo">ABC Bakery</li>
+							
+							<img class="homeNavigation" src="images\home.png" alt="">
+							<li><a href="JavaScript:void(0)" ng-click="toHome()">Home</a></li>	
+							
+							<img class="menuNavigation" src="images\menu.png" alt="">
+							<li><a href="JavaScript:void(0)" ng-click="toMenu()">Menu</a></li>	
+							
+							<img class="serviceNavigation" src="images\deliverypink.png" alt="">
+							<li><a href="JavaScript:void(0)" ng-click="toServices()">Services</a></li>				
+							
+							<img class="aboutNavigation" src="images\chefhat.png" alt="">
+							<li><a href="JavaScript:void(0)" ng-click="toAbout()">Charity</a></li>		
+							
+							<img class="contactNavigation" src="images\contact1.png" alt="">
+							<li><a href="JavaScript:void(0)" ng-click="toContact()">Contact</a></li>
+
+							<li class="pull-right" id="navPhone">890-123-4567</li>
+
+						</ul>
+					</nav>
+
+				</div> <!-- end row -->
+			</div> <!-- end navigationMenu -->	
+
+	<!-- Mobile Navigation Menu -->
+
+		<div class="row" id="mobileMenu">
+			<div class="col-md-3 pull-right">
+				<div class="mobileMenuButton">
+					<span class="mobileMenuBar" id="mobileMenuBar1"> <hr> </span>
+					<span class="mobileMenuBar" id="mobileMenuBar1"> <hr> </span>
+					<span class="mobileMenuBar" id="mobileMenuBar1"> <hr> </span>
+				</div>
+			</div>
+		</div>
+
+		<div class="container" id="mobileNavigationContainer">
+			<div class="row">
+				
+				<div class="mobileMenuClose"><span>X</span></div>
+
+				<div class="col-md-12">
+					<ul class="col-md-12">
+						
+						<li class="mobileNavLink"><a href="JavaScript:void(0)" ng-click="toHome()">Home</a></li>
+
+						<li class="mobileNavLink"><a href="JavaScript:void(0)" ng-click="toMenu()">Menu</a></li>
+
+						<li class="mobileNavLink"><a href="JavaScript:void(0)" ng-click="toServices()">Services</a></li>	
+
+						<li class="mobileNavLink"><a href="JavaScript:void(0)" ng-click="toAbout()">About/Charity</a></li>
+						
+						<li class="mobileNavLink"><a href="JavaScript:void(0)" ng-click="toContact()">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div> <!-- end mobileNavigationContainer -->	
+
+		<div ng-view autoscroll="true"></div>
+
+		</div>
+
+
+	<!-- Files for AngularJS -->
+
+		<!-- Load online angular -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+		
+		<!-- Load angular-route.js -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>		
+				
+		<!-- Load local angularJS files for site -->
+		
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/controllers.js"></script>
+		<script type="text/javascript" src="js/directives.js"></script>
+		<script type="text/javascript" src="js/routes.js"></script>
+
+
+	<!-- Files for jQuery & Bootstrap -->
+
+		<!-- Load online jquery first -->
+		<script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>		
+
+		<!-- Load online bootstrap js -->
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<!-- Main JS file -->
+
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/mainJQ.js"></script>
+		
+	</body>
+</html>
