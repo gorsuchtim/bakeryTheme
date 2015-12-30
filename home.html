@@ -1,0 +1,150 @@
+<div class="container container-fluid" id="homeContainer" ng-controller="SiteNav as nav">
+
+	<!-- Logo -->
+	<div class="row" id="logo">
+		<div class="col-xs-12">
+			<h1 class="text-center">ABC Bakery</h1>				
+		</div>
+	</div>	
+
+
+<!-- Carousel Container -->
+
+	<div class="container" id="backgroundImageContainer"> 
+	
+		
+
+	</div> <!-- end carouselContainer -->
+
+<!-- Featured Container -->
+
+	<div class="container-fluid homeContainer" id="featuredContainer">
+		<div class="row titleRow">
+
+			<div class="col-xs-12 homeTitle">
+				<h3 class="text-center animateText animated" id="favoritesHeader">Fall favorites</h3>
+				<h4 class="text-center animated" id="favoritesSub">See what's warming everybody up as the weather cools down this fall season.</h4>
+
+			</div>
+
+		</div> <!-- end titleRow -->
+
+		<div class="row text-center" id="featuredImages" ng-controller="MenuNavigation as menu">
+			
+			<div class="galleryTeaseContainer">
+				
+				<div class="col-xs-12 col-sm-3 galleryTease" id="galleryTease1">
+					<a href="JavaScript:void(0)" ng-click="toMenu()">
+						<div class="galleryTeaseShade">							
+								<h5>Cookies</h5>							
+						</div>
+					</a>
+				</div>
+
+				<div class="col-xs-12 col-sm-3 galleryTease" id="galleryTease2">
+					<a href="JavaScript:void(0)" ng-click="toMenu()">
+						<div class="galleryTeaseShade">							
+								<h5>Cakes</h5>					
+						</div>
+					</a>
+				</div>
+				
+				<div class="col-xs-12 col-sm-3 galleryTease" id="galleryTease3">
+					<a href="JavaScript:void(0)" ng-click="toMenu()">
+						<div class="galleryTeaseShade">							
+							<h5>Pies/desserts</h5>							
+						</div>
+					</a>
+				</div>
+				
+				<div class="col-xs-12 col-sm-3 galleryTease" id="galleryTease4">
+					<a href="JavaScript:void(0)" ng-click="toMenu()">
+						<div class="galleryTeaseShade">						
+								<h5>Breads</h5>							
+						</div>
+					</a>
+				</div>
+			</div>	<!-- end galleryTeaseContainer -->
+			
+		</div> <!-- end row -->		
+
+		<div class="row">
+
+			<div class="col-xs-12 homeButton">
+				<button class="btn btn-lg center-block" ng-click="toMenu()"><a href="JavaScript:void(0)">My full menu</a></button>				
+			</div>
+
+		</div>		
+
+	</div>	<!-- end featuredContainer -->
+
+
+<!-- News Container -->
+
+	<div class="container-fluid" id="myStoryContainer">
+
+		<div class="container-fluid" id="galleryContainer">	
+			
+			<div class="row">
+				<div class="col-xs-12 galleryTile" id="galleryTile1">
+					<div class="galleryShade">	
+						<h3 class="text-center">My story</h3>					
+						<h4 class="text-center">Inspired family &amp; traditional recipes specialty classic or custom cupcakes cakes cookies event planning and catering your bridal or baby shower, work event, birthday party and more</h4>
+					</div>
+				</div>
+			</div>	
+		
+		</div> <!-- end galleryContainer -->
+
+	</div> <!-- end myStoryContainer -->	
+
+
+<!-- Charity Container -->
+
+	<div class="container-fluid text-center homeContainer" id="charityContainer">
+		
+		<div class="row">
+
+			<div class="col-xs-12 homeTitle">
+				<img src="images/charity-black.png" alt="">
+				<h3>Help me help our community</h3>
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="col-xs-12 col-lg-6 col-lg-offset-3 homeContent">
+				<h4>I love the city I'm from. It's where I live, work, and play.
+					That's why I donate a portion of each order to a local charity of your choice.  Together we can make this city a sweeter place to live.</h4>
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="col-xs-12 homeButton">
+
+				<button class="btn btn-lg center-block" ng-click="toAbout()"><a href="JavaScript:void(0)">Learn more</a></button>
+
+				<!-- direct to about page -->
+			</div>
+
+		</div>	
+
+	</div> <!-- end charityContainer -->
+
+<!-- Footer Container -->
+
+	<div class="row text-center" id="socialRow">
+		<div class="col-xs-12">
+			<ul>
+				<li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+				<li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+				<li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+				<li><a href="#"><img src="images/pinterest.png" alt=""></a></li>
+			</ul>
+		</div>
+	</div>	
+
+</div> <!-- end home container -->
