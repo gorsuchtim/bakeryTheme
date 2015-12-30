@@ -1,0 +1,95 @@
+<div class="container-fluid" id="contactContainer">
+	
+	<div class="row templateHeader" style="background-image: url('images/slider4.jpg');">
+		<div class="overlay">
+			<div class="col-xs-12 templateHeader">				
+				<h3 class="text-center">Contact</h3>		
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<col-xs-12>
+			<h3 class="text-center" id="errorMessage">Let me know how I can help you</h3>
+		</col-xs-12>
+	</div>	
+
+	<div class="row text-center">
+		
+		<div class="col-xs-12">
+			<form name="contactForm" action="#" ng-controller="FormController as form" id="contactForm" ng-submit="submitForm()">
+
+				<div class="form-group" id="selectGroup">
+					<select name="option" class="form-control center-block" required>
+						<option value="">Interest</option>
+						<option value="Cakes">Cakes</option>
+						<option value="Cupcakes">Cupcakes</option>
+						<option value="Cookies">Cookies</option>
+						<option value="Desserts">Desserts</option>			
+						<option value="Desserts">Volunteering</option>	
+						<option value="Desserts">Charity Donation</option>	
+						<option value="Desserts">Something else</option>	
+					</select>
+				</div>
+				
+				<div class="form-group" id="nameGroup">	
+
+					<label for="form.name" id="nameError">Name </label>				
+					<input type="text" id="name" name="name" maxlength="20" class="center-block" placeholder="Your first name" required>
+
+				</div>			
+
+				<div class="form-group" id="messageGroup">	
+
+					<label for="message" id="messageError">Message </label>
+					<textarea class="center-block" name="message" id="message" cols="50" rows="3" placeholder="Brief message" required></textarea>
+
+				</div>
+
+				<div class="form-group" id="emailGroup">									
+					<label for="email" id="emailError">Email </label>
+					<input name="email" id="email" class="center-block" type="email" placeholder="Your email address" required>
+
+				</div>
+								
+				<button class="btn btn-md">Submit your message</button>	
+
+			</form>
+
+
+		</div>
+
+	</div>
+
+	<div class="row" id="contactOptions">
+		<div class="col-xs-12">
+			<h3 class="text-center">myEmail@myEmail.com</h3>
+				<div class="row">
+					<div class="col-xs-12 text-center" id="emailProviders">
+						<ul>
+						<li><a href="#"><img src="images/gmail.png" alt=""></a></li>
+						<li><a href="#"><img src="images/yahoo.png" alt=""></a></li>
+						<li><a href="#"><img src="images/hotmail.png" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+			
+		</div>
+	</div>
+				
+	</div>
+
+	<div class="row text-center" id="socialRow">
+		<div class="col-xs-12">
+			<ul>
+				<li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+				<li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+				<li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+				<li><a href="#"><img src="images/pinterest.png" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
+
+
+
+</div>
