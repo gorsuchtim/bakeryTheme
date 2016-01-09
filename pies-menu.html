@@ -8,18 +8,19 @@
 				<section ng-controller="MenuTabs as menutab">
 					<ul class="nav nav-pills" id="menuTabs">
 						<li ng-class="{ active:menutab.isTab(1) }"><a href="JavaScript:void(0)" ng-click="menutab.setTab(1)">Description</a></li>						
-						<li ng-class="{ active:menutab.isTab(2) }"><a href="JavaScript:void(0)" ng-click="menutab.setTab(2)">Variety</a></li>
-						<li ng-class="{ active:menutab.isTab(3) }"><a href="JavaScript:void(0)" ng-click="menutab.setTab(3)">Reviews</a></li>
+						<li ng-class="{ active:menutab.isTab(2) }"><a href="JavaScript:void(0)" ng-click="menutab.setTab(2)">Variety</a></li>		
+						<li ng-class="{ active:menutab.isTab(3) }"><a href="JavaScript:void(0)" ng-click="menutab.setTab(3)">Reviews</a></li>				
 						<li ng-class="{ active:menutab.isTab(4) }"><a href="JavaScript:void(0)" ng-click="menutab.setTab(4)">Price</a></li>
+						
 					</ul>						
 
 						<div class="panel content" id="description" ng-show="menutab.isTab(1)">
 							<p> {{ items.description }} </p>
 						</div>
 
-						<div class="panel content" id="reviews" ng-show="menutab.isTab(2)">
+						<div class="panel content" id="variety" ng-show="menutab.isTab(2)">
 							<p> {{ items.variety }} </p>
-						</div>
+						</div>						
 
 						<!-- Review Panel -->
 
@@ -28,6 +29,9 @@
 						<div class="panel content" id="price" ng-show="menutab.isTab(4)">
 							<p> {{ items.price }} </p>
 						</div>
+
+					
+						
 				</section>
 			</div>
 		</div>
