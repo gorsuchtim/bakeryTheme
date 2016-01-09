@@ -1,3 +1,9 @@
+/**********************
+Bakery Theme CSS
+
+Includes media queries for responsive design
+
+****************************/
 body {	
 	width: 100%;
 	margin: 0;
@@ -6,7 +12,6 @@ body {
 #mainContainer {
 	padding: 0;
 }
-
 
 /*---------------------------------
 Hide Tablet and handheld Styles
@@ -74,7 +79,7 @@ Mobile menu button and menu styles
 ----------------------------------*/
 .mobileMenuButton {		
 	position: fixed;
-	right: 3%;
+	right: 7%;
 	height: 35px;
 	width: 45px;	
 	margin-top: 20px;
@@ -106,7 +111,7 @@ Mobile menu button and menu styles
 #mobileNavigationContainer ul {
 	list-style: none;
 	text-align: center;
-	margin-top: 11%;	
+	margin-top: 100px;	
 }	
 #mobileNavigationContainer li {
 	font-size: 1.8em;		
@@ -137,7 +142,6 @@ Mobile menu button and menu styles
 	right: 6%;
 	z-index: 1;
 }
-
 
 /*----------------------
 Global home page container styles
@@ -186,38 +190,32 @@ Home Page Styles
 ----------------------*/
 
 #homeContainer {	
-	top: 0;
-	left: 0;
 	margin: 0;
 	padding: 0;	
 	width: inherit;
 	z-index: 2;
 }
-#logo h1 {	
-	margin-top: 150px;				
-	z-index: 1;	
-	font-family: 'Clicker Script', cursive;		
-	color: rgba(153,204,255,1);
-	text-shadow: 2px 1px 1px black;
-	font-size: 5em;		
-}
 
 /*-------------------------------------
-Carousel/Container (1400x600)
+Title Image Container
 --------------------------------------*/
 
-#backgroundImageContainer {		
-	position: relative;
+#backgroundImageContainer {			
 	background-image: url('../images/slider1.jpg');
 	background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat;
-	top: 0;
-	left: 0;
-	margin: 0;
-	padding: 0;	
-	width: inherit;
+	background-repeat: no-repeat;	
 	height: 600px;		
+}
+#logo {		
+	padding-top: 12%;		
+	z-index: 1;		
+}
+#logo h1 {	
+	font-family: 'Clicker Script', cursive;		
+	color: rgba(153,204,255,1);
+	text-shadow: 2px 1px 1px black;
+	font-size: 50px;		
 }
 
 /*-----------------
@@ -304,11 +302,6 @@ My Story Container
 	border-top: 1px solid rgba(153,204,255,1);
 	border-bottom: 1px solid rgba(153,204,255,1);
 }
-#myStoryContainer li {
-	list-style: none;
-	font-size: 15px;
-	margin-top: 15px;
-}
 .galleryTile {
 	position: relative;	
 	height: 450px;			
@@ -331,12 +324,9 @@ My Story Container
 	transition: all 0.3s ease-in-out;
 }
 #galleryTile1 {
-	background-image: url('/justines/images/myStory.jpg');
+	background-image: url('../images/myStory.jpg');
 	background-position: bottom;
 	border-right: 1px solid black;		
-}
-#galleryTile2 {
-	background-image: url('/justines/images/recentNews.jpg');
 }
 .galleryShade h3 {
 	padding-top: 20px;	
@@ -344,22 +334,10 @@ My Story Container
 	font-family: 'Clicker Script', cursive;		
 }
 .galleryShade h4 {
-	padding: 25px 200px 25px 200px;
+	padding: 0 300px;
 	line-height: 40px;
 	font-family: 'Alice', serif;	
 	font-size: 30px;		
-}
-.galleryShade li {	
-	font-family: 'Alice', serif;	
-	font-size: 18px;
-	list-style-type: none;
-}
-.galleryShade span, .galleryShade a {
-	color: rgba(94,82,64,1);
-	text-shadow: 1px 1px 1px rgb(232,143,225);
-	font-weight: bold;
-	font-size: 20px;
-	text-decoration: none;
 }
 
 /*-----------------
@@ -475,11 +453,6 @@ Global Template Styles
 	margin-top: 15px;
 }
 
-
-/*-----------------------
-Menu Page Styles
-----------------------*/
-
 /*---------------
 Menu Landing
 --------------------*/
@@ -564,12 +537,12 @@ Menu pages
 	width: 200px;
 	height: 200px;
 }
-#menuTabs {
-	margin-left: 15%;
+#menuTabs {	
 	margin-top: 10px;
 }
 #menuTabs a {
 	color: black;
+	font-size: 12px;
 }
 .nav-pills > li.active > a {
 	background-color: rgba(153,204,255,1);
@@ -634,8 +607,7 @@ Contact Page Styles
 }
 #contactOptions {				
 	font-family: 'Alice', serif;		
-	color: rgba(153,204,255,1);	
-	margin-bottom: 15px;
+	color: rgba(153,204,255,1);		
 }	
 #emailProviders img {
 	margin-top: 15px;
@@ -658,7 +630,6 @@ Contact Page Styles
 	display: inline;
 	margin-right: 35px;
 }
-
 #contactContainer .form-control {
 	width: 30%;
 }
@@ -686,8 +657,7 @@ Contact Page Styles
 	padding: 5px;
 }
 #contactForm button {
-	border-color: rgba(153,204,255,1);
-	margin-top: 20px;
+	border-color: rgba(153,204,255,1);	
 	transition: all 0.2s ease-in-out;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
@@ -698,9 +668,9 @@ Contact Page Styles
 	background-color: transparent;
 }
 
-/*--------------
+/*---------------------
 Small Handheld Styles
-------------------*/
+-----------------------*/
 
 @media screen and (max-width: 519px) {
 	#navigationMenu {
@@ -708,17 +678,7 @@ Small Handheld Styles
 	}	
 	#mobileMenu, #mobileMenuButton {
 		display: block;
-	}
-	#carouselContainer {
-		height: 515px;
-	}
-	#galleryCarousel {
-		height: 515px;
-	}
-	#myStoryContainer h4 {
-		font-size: 20px;
-		padding: 0;
-	}
+	}	
 	.item {
 		height: 515px;	
 	}	
@@ -730,14 +690,9 @@ Small Handheld Styles
 		background-size: 200px 200px;
 		background-position: center;	
 	}
-	.galleryTeaseShade {		
-		border: 1px solid white;
-		border-radius: 16px;
-	}
-	.galleryTeaseShade h5 {
-		color: rgba(153,204,255,1);
-		text-shadow: 2px 2px 2px black;
-	}
+	.galleryTeaseShade {
+		display: none;
+	}	
 	.templateHeader h3 {
 		margin-top: 40px;
 	}
@@ -753,6 +708,7 @@ Small Handheld Styles
 	#socialRow img {
 		width: 40px;
 		height: 40px;
+		margin-right: 25px;
 	}
 	.contentColumn img {
 		margin-top: 40px;
@@ -769,12 +725,6 @@ Small Handheld Styles
 	#contactContainer form {
 		margin-bottom: 30px;
 	}
-	#contactOptions {
-		margin-top: 30px;		
-	}	
-	#contactOptions h4 {
-		margin: 20px;
-	}	
 	#menuNavigation li  {
 		margin-right: 10px;	
 	}
@@ -790,60 +740,37 @@ Small Handheld Styles
 	#seasonalMenuTease {
 		display: none;
 	}
+	.galleryShade h4 {
+		font-size: 18px;
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-bottom: 20px;
+	}
 }
 
-/*--------------
+/*---------------------------------------
 Large Handheld Styles and tablet styles
-------------------*/
+-----------------------------------------*/
 
 @media screen and (min-width: 520px) and (max-width: 1024px) {
 	#navigationMenu {
 		display: none;
-	}
-	.galleryTease {
-		position: relative;	
-		height: 200px;			
-		color: transparent;
-		background-repeat: no-repeat;
-		background-size: 200px 200px;
-		background-position: center;	
-	}
-	.galleryTeaseShade {		
-		border: 1px solid white;
-		border-radius: 16px;
-	}
-	.galleryTeaseShade h5 {
-		color: rgba(153,204,255,1);
-		text-shadow: 2px 2px 2px black;
 	}	
 	#mobileMenu, #mobileMenuButton {
 		display: block;
 	}
-	#carouselContainer {
-		height: 515px;
-	}
-	#galleryCarousel {
-		height: 515px;
-	}
-	.item {
-		height: 515px;	
+	.galleryShade h4 {
+		padding-bottom: 20px;
 	}
 	.templateHeader h3 {
 		margin-top: 40px;
 	}
 	.homeContainer h3 {
 		font-size: 35px;
-	}
-	#myStoryContainer h4 {
-		padding: 0;
-		font-size: 20px;
 	}	
 	#contactForm fieldset {
 		margin-top: 20px;
-	}
-	#contactOptions {
-		margin-top: 30px;
-	}
+	}	
 	#contactContainer #socialRow {
 		margin-top: 15px;
 	}
@@ -870,6 +797,17 @@ Large Handheld Styles and tablet styles
 	#menuTease button {
 		margin-bottom: 30px;
 	}	
+	.galleryShade h4 {
+		font-size: 18px;
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-bottom: 20px;
+	}
+	#socialRow img {
+		width: 40px;
+		height: 40px;
+		margin-right: 25px;
+	}
 }
 
 @media screen and (max-width: 991px) {
