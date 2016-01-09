@@ -1,7 +1,7 @@
 <div class="container container-fluid" id="breadMenu">
 	
 		<div class="row menuHeader" ng-show="menu.isMenu(2)" >
-			<div class="col-sm-6" ng-repeat="items in breads.products">
+			<div class="col-xs-12 col-sm-6" ng-repeat="items in breads.products">
 				<h3 class="text-center" id="itemName"> {{ items.name }} </h3>
 				<img ng-src="{{ items.images }}" class="center-block" alt="">
 
@@ -17,7 +17,7 @@
 							<p> {{ items.description }} </p>
 						</div>
 
-						<div class="panel content" id="reviews" ng-show="menutab.isTab(2)">
+						<div class="panel content" id="variety" ng-show="menutab.isTab(2)">
 							<p> {{ items.variety }} </p>
 						</div>
 
